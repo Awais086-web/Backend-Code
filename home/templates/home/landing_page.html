@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" type="text/css" href={% static 'css/landing_page.css'%}>
+
+</head>
+
+<body>
+  <div class="bg-white">
+    <img src={% static 'img/svgexport-1.svg' %}>
+    <p>Wise keeps your money safe Learn How</p>
+  </div>
+  <!-----------------------Navbar Section----------------------------------->
+  <div class="container container-nav">
+    <nav class="navbar">
+      <div class="logo">
+        <img src={% static 'img/Group 12397.svg' %} alt="Logo">
+      </div>
+
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Feature</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#" class="download-button">Download Now</a>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <!-----------------------Banner Section----------------------------------->
+  <div class="background-banner">
+    <div class="container container-banner">
+      <div class="banner">
+        <div class="content">
+          <h1 class="heading">Priority Gold</h1>
+          <h2 class="sub-heading"}>For Traders & Investors</h2>
+          <div class="paragraph col-lg-6">
+
+            <p>making it look like readable English. Many desktop publishing packages and </p>
+            <p>making it look like readable English. </p>
+          </div>
+          <button class="download-button2">Download Now</button>
+        </div>
+        <div class="image">
+          <img src={% static 'img/Priority-Gold2.xd.png' %} alt="Right Image">
+        </div>
+      </div>
+    </div>
+    <div class="background-white2"></div>
+  </div>
+
+  <!-------------------------Rounded Container--------------------------------->
+  <div class="background-white">
+
+    <div class="container-cr">
+      <div class="left-section-cr">
+        <div class="content-cr">
+          <h2 class="heading-cr">Features</h2>
+          <h3 class="sub-heading-cr">world-class platform</h3>
+          <div class="icons-container-cr">
+            <div class="icon-cr">
+              <div class="icon-round">
+                <img src={% static 'img/svgexport-16.svg' %} alt="Icon 1">
+              </div>
+              <div class="icon-line-cr"></div>
+              <p class="icon-description-cr">This is the paragraph for icon 1.</p>
+            </div>
+            <div class="icon-cr">
+              <img src={% static 'img/svgexport-17.svg' %} alt="Icon 2">
+              <div class="icon-line-cr"></div>
+              <p class="icon-description-cr">This is the paragraph for icon 2.</p>
+            </div>
+            <div class="icon-cr">
+              <img src={% static 'img/svgexport-12.svg' %} alt="Icon 3">
+              <div class="icon-line-cr"></div>
+              <p class="icon-description-cr">This is the paragraph for icon 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-section-cr">
+        <div class="circle-container-cr">
+          <img src={% static 'img/m001t0212_b_lock_29jun22@2x.png' %} alt="Image" class="circle-image-cr">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

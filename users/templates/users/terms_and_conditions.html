@@ -1,0 +1,211 @@
+{% comment %} <div>
+    {{ terms_and_conditions.content|safe }}
+</div> {% endcomment %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Priority Gold</title>
+
+
+
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+       <!---------------------------------- Navbar        ----------------------------------------->
+
+
+    <header>
+        <nav class="navbar navbar-expand-sm background-nav">
+            <div class="container">
+                <!-- Navbar content -->
+                <div class="cut-out-shape"></div>
+                <div class="justify-content-center" id="navbarTogglerDemo01">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="navbar-nav">
+                                <li class="nav-item linee">
+                                    <a class="nav-link" href={% url 'Career' %}>Careers</a>
+                                </li>
+                                <li class="nav-item column-gape-right">
+                                    <a class="nav-link" href={% url 'Market_Summary' %}>Market Summary</a>
+                                </li>
+                                <li class="nav-item-left linee  column-gape-left">
+                                    <a class="nav-link" href={% url 'Media_Center' %}>Media Center</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href={% url 'Daily_Downloads' %}>Daily Downloads</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="logo-container">
+        <img src={% static 'img/Group-11944.svg' %} alt="Logo" class="navbar-logo rounded-border">
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-white">
+        <div class=" container">
+            <!-- Navbar content -->
+            <div class="justify-content-center" id="navbarTogglerDemo01">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="navbar-nav">
+                            <li class="nav-item-second column-gape">
+                                <a class="nav-link black" href={% url 'users-home'%} >Home</a>
+                            </li>
+                            <li class="nav-item-second">
+
+                                <a class="nav-link black" href={% url 'legal_framwork' %}>
+
+                                    Legal Framework
+                                </a>
+
+                            </li>
+                            <li class="nav-item-second ">
+
+                                <a class="nav-link black" href={% url 'the_exchange' %}>
+
+                                    The Exchange
+                                </a>
+                            </li>
+
+                            <li class="nav-item-second linee-4 ">
+                                <button class="btn btn-white-outline nav-item2">
+                                    Get an App
+                                </button>
+                            </li>
+                            <li class="nav-item-second">
+                                <a href="{% url 'login' %}" class="btn btn-golden nav-item2">Login</a>
+
+                            </li>
+                            <li class="nav-item-second">
+                                <a href="{% url 'users-register' %}" class="btn btn-golden nav-item2">SignUp</a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cut-out-shape2"></div>
+    </nav>
+
+    
+    <br>
+    <br>
+    <hr>
+    {{ terms_and_conditions.content|safe }}
+    <div class="bg-white">
+        <div class="container container-container">
+            <div class="image-container">
+                <img src={% static 'img/Group-12207.png' %} alt="Image">
+                <div class="content-container">
+                    <h1 class="main-heading-container">Get Started</h1>
+                    <h1 class="sub-heading-container">with Priority Gold</h1>
+                    <p class="paragraph-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <button class="my-button-container">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-section" style="background-color: white
+    ; font-family: 'myFont-Medium';">
+        <p>Featured and seen in</p>
+        <!-- <p>Description goes here...</p> -->
+
+        <div class="image-row">
+            <img src={% static 'img/circle.png' %} alt="Image 1">
+            <img src={% static 'img/earth-2.0.png' %} alt="Image 2">
+            <img src={% static 'img/solaytic.png' %} alt="Image 4">
+            <img src={% static 'img/kyan.png' %} alt="Image 3">
+            <img src={% static 'img/treva.png' %} alt="Image 4">
+        </div>
+        <br>
+    </div>
+    <div style="background-color: white;"><br><br></div>
+
+    <div class="">
+        <!-- <section style="height:5px;"></section> -->
+
+        <!----------- Footer ------------>
+        <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <img src="{% static 'img/Group-11944.svg' %}" class="logo-image"></img>
+                </div>
+                <div class="col-md-2 footer-nav animated fadeInUp">
+                    <h2>Explore</h2>
+                    <div class="col-md-12">
+                        <ul class="pages">
+                            <li><a href={% url 'users-home' %}>Home</a></li>
+                            <li><a href={% url 'About_us' %}>About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-nav animated fadeInUp">
+                    <h2>Help</h2>
+                    <div class="col-md-12">
+                        <ul class="pages">
+                            <li><a href={% url 'users-terms_and_conditions'%}>Terms &amp; Conditions</a></li>
+                            <li><a href={% url 'users-privacy_policy' %}>Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h2>Available On</h2>
+                    <button class="golden-button-card"><i class="fab fa-apple"></i> Apple Store</button>
+                    <button class="golden-button-card"><i class="fab fa-google-play"></i> Play Store</button>
+                </div>
+            </div>
+        </footer>
+        <div style="padding: 5px; background-color: #505050; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <div class="social-icons">
+                    <img src="{% static 'img/Facebook.svg' %}" alt="Facebook">
+                    <img src="{% static 'img/Instagram.svg' %}" alt="Instagram">
+                    <img src="{% static 'img/Twitter.svg' %}" alt="Twitter">
+                    <img src="{% static 'img/Youtube.svg' %}" alt="Youtube">
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; {{ year }} Priority Gold. All rights reserved.
+            </div>
+        </div>
+</body>
+
+</html>

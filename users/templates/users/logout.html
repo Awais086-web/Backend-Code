@@ -1,0 +1,182 @@
+{% comment %} {% extends "users/base.html" %}
+{% block title %}Logout{% endblock title %}
+{% block content %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title">You have been logged out</h5>
+        <p class="card-text">
+            Thanks for your time, contact me for any comments or suggestions using my email address.
+        </p>
+        <br><hr><a href="{% url 'login' %}" class="btn btn-primary">Sign in again</a>
+        </div>
+    </div>
+
+
+{% endblock content %} {% endcomment %}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href={% static 'css/login.css' %}>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+
+
+
+    <style>
+        @media (max-width:1473px) {
+            body {
+                padding-top: 30px;
+            }
+        }
+
+        @media(max-width: 1213px) {
+            body {
+                padding-top: 290px;
+            }
+
+            .back img {
+                height: auto;
+                padding-top: 80px;
+                width: 564px;
+                z-index: -1;
+                margin-left: -1402px;
+            }
+
+            .logo img {
+                width: auto;
+                height: 115px;
+                margin-left: -163px;
+            }
+
+            .right-section img {
+                margin-left: 0px;
+            }
+        }
+
+        @media(max-width:1200px) {
+            body {
+                padding-top: 290px;
+            }
+
+            .back img {
+                height: auto;
+                padding-top: 80px;
+                width: 564px;
+                z-index: -1;
+                margin-left: -1402px;
+            }
+
+            .logo img {
+                width: auto;
+                height: 115px;
+                margin-left: -163px;
+            }
+
+            .right-section img {
+                margin-left: 0px;
+            }
+
+            .left-section {
+                padding: 0px;
+            }
+        }
+
+        @media (max-width:1120px) {
+
+            .back img {
+                height: auto;
+                padding-top: 80px;
+                width: 564px;
+                z-index: -1;
+                margin-left: -1402px;
+            }
+        }
+
+        @media (max-width:992px) {
+
+            .back img {
+                height: auto;
+                padding-top: 80px;
+                width: 564px;
+                z-index: -1;
+                margin-left: -1402px;
+            }
+        }
+
+        @media (max-width:992px) {
+
+            .back img {
+                /* height: auto; */
+                padding-top: 80px;
+                width: 564px;
+                z-index: -1;
+                margin-left: -1250px;
+            }
+
+            .right-section img {
+                height: auto;
+                width: 400px;
+            }
+
+            .logo img {
+                width: auto;
+                height: 115px;
+                margin-left: 2px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <div class="col-lg-5">
+
+            <div class="left-section">
+                <div class="logo">
+                    <img src={% static 'img/group-8.svg' %} alt="Logo">
+                </div>
+                <div class="form">
+                    <h2>GOOD BYE!</h2>
+                    <p>.</p>
+
+                    <button >
+                        <a href="{% url 'login' %}" class="button">Sign in again</a>
+                    </button>
+
+                    
+                
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7">
+
+            <div class="right-section"><img src={% static 'img/group-12204.png' %}></div>
+        </div>
+    </div>
+    <div class="back">
+        <img src={% static 'img/background-eagle.svg'%}>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

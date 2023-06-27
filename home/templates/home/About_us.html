@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href={% static 'css/About_us.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us | Priority Gold</title>
+</head>
+
+<body>
+
+
+    <header>
+  
+    <header>
+        <nav class="navbar navbar-expand-sm background-nav">
+            <div class="container">
+                <!-- Navbar content -->
+                <div class="cut-out-shape"></div>
+                <div class="justify-content-center" id="navbarTogglerDemo01">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="navbar-nav">
+                                <li class="nav-item linee">
+                                    <a class="nav-link" href={% url 'Career' %}>Careers</a>
+                                </li>
+                                <li class="nav-item column-gape-right">
+                                    <a class="nav-link" href={% url 'Market_Summary' %}>Market Summary</a>
+                                </li>
+                                <li class="nav-item-left linee  column-gape-left">
+                                    <a class="nav-link" href={% url 'Media_Center' %}>Media Center</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href={% url 'Daily_Downloads' %}>Daily Downloads</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="logo-container">
+        <img src={% static 'img/Group-11944.svg' %} alt="Logo" class="navbar-logo rounded-border">
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-white">
+        <div class=" container">
+            <!-- Navbar content -->
+            <div class="justify-content-center" id="navbarTogglerDemo01">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="navbar-nav">
+                            <li class="nav-item-second column-gape">
+                                <a class="nav-link black" href={% url 'users-home'%} >Home</a>
+                            </li>
+                            <li class="nav-item-second">
+
+                                <a class="nav-link black" href={% url 'legal_framwork' %}>
+
+                                    Legal Framework
+                                </a>
+
+                            </li>
+                            <li class="nav-item-second ">
+
+                                <a class="nav-link black" href={% url 'the_exchange' %}>
+
+                                    The Exchange
+                                </a>
+                            </li>
+
+                            <li class="nav-item-second linee-4 ">
+                                <button class="btn btn-white-outline nav-item2">
+                                    Get an App
+                                </button>
+                            </li>
+                            <li class="nav-item-second">
+                                <a href="{% url 'login' %}" class="btn btn-golden nav-item2">Login</a>
+
+                            </li>
+                            <li class="nav-item-second">
+                                <a href="{% url 'users-register' %}" class="btn btn-golden nav-item2">SignUp</a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cut-out-shape2"></div>
+    </nav>
+
+    
+
+    <div class="banner">
+        <img src={% static 'img/group-12339.png' %} alt="Banner Image">
+        <h1 class="banner-heading">About Us</h1>
+    </div>
+
+    <div class="col-lg-12 mol-md-12 bg-pink">
+        <h1 class="section-heading">Helping Entrepreneurs</h1>
+        <h1 class="section-subheading">Make More Money</h1>
+        <div class="container container-div">
+            <div class="image-section-second">
+                <img src={% static 'img/group-12204.png'%} alt="Image" class="security-image-second">
+
+            </div>
+            <div class="security-section-second">
+                <h1 class="security-heading-second">Our platform's</h1>
+                <h1 class="security-heading-second">Security Feature</h1>
+                <p class="security-paragraph-second">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+                <button class="security-button-second">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 mol-md-12 bg-white">
+        <div class="container container-div">
+            <div class="security-section">
+                <h1 class="security-heading">Our platform's</h1>
+                <h1 class="security-heading"> Security Feature</h1>
+                <p class="security-paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+                <button class="security-button">Get Started </button>
+            </div>
+            <div class="image-section">
+                <img src={% static 'img/group-11955.png'%} alt="Image" class="security-image">
+                <!-- <div class="security-oval"></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="bg-white"><br><br><br><br><br><br><br><br><br><br></div>
+    <div class="container container-box">
+        <h1 class="heading-primary1">Numbers Speak For</h1>
+        <h1 class="heading-primary">Themselves</h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in purus vitae
+            mauris
+            tristique euismod. Duis eu elit id urna placerat dapibus. Nullam dapibus purus ut urna semper tincidunt.
+        </p>
+
+        <div class="card-row">
+            <div class="card-s">
+                <h2 class="card-heading-s">235,000 +</h2>
+                <p>Global Traders</p>
+            </div>
+            <div class="card-s">
+                <h2 class="card-heading-s">$ 45,000</h2>
+                <p>Invest Volumn</p>
+
+            </div>
+            <div class="card-s">
+                <h2 class="card-heading-s">85,000 +</h2>
+                <p>Active Profiles</p>
+
+            </div>
+        </div>
+
+        <button class="button-primary">Get Started</button>
+    </div>
+    <br>
+    <div class="col-lg-12 mol-md-12 bg-pink">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1 class="section-heading">Create At The</h1>
+        <h1 class="section-subheading">Speed Of Thought</h1>
+        <div class="container container-div">
+            <div class="image-section-second">
+                <img src={% static 'img/mask-group-5.png'%} alt="Image" class="security-image-second">
+
+            </div>
+
+            <div class="security-section-second">
+                <h1 class="security-heading-second">World class</h1>
+                <h1 class="security-heading-second">information design</h1>
+                <h1 class="security-heading-second">at your fingertips</h1>
+                <p class="security-paragraph-second">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+                <button class="security-button-second">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white banneer">
+        <div class="container container-new">
+            <div class="heading-section-card">
+                <h1 class="main-heading-card">Read Hot Trading And</h1>
+                <h1 class="sub-heading-card">Priority Gold News</h1>
+            </div>
+
+            <div class="card-section-card">
+                <div class="card card-card">
+                    <img class="card-image-card" src={% static 'img/Rectangle-1506.png'%} alt="Image 1">
+                    <h2 class="card-heading-card">Card 1</h2>
+                    <p class="card-paragraph-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="golden-card-button">Read More</button>
+                </div>
+
+                <div class="card card-card">
+                    <img class="card-image-card" src={% static 'img/Rectangle-1503.png'%} alt="Image 2">
+                    <h2 class="card-heading-card">Card 2</h2>
+                    <p class="card-paragraph-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="golden-card-button">Read More</button>
+                </div>
+
+                <div class="card card-card">
+                    <img class="card-image-card" src={% static 'img/Rectangle-1504.png'%} alt="Image 3">
+                    <h2 class="card-heading-card">Card 3</h2>
+                    <p class="card-paragraph-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="golden-card-button">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-white">
+        <div class="container container-container">
+            <div class="image-container">
+                <img src={% static 'img/Group-12207.png'%} alt="Image">
+                <div class="content-container">
+                    <h1 class="main-heading-container">Get Started</h1>
+                    <h1 class="sub-heading-container">with Priority Gold</h1>
+                    <p class="paragraph-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <button class="my-button-container">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: white;"><br><br></div>
+
+    <div class="">
+
+        <!----------- Footer ------------>
+        <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <img src="{% static 'img/Group-11944.svg' %}" class="logo-image"></img>
+                </div>
+                <div class="col-md-2 footer-nav animated fadeInUp">
+                    <h2>Explore</h2>
+                    <div class="col-md-12">
+                        <ul class="pages">
+                            <li><a href={% url 'users-home' %}>Home</a></li>
+                            <li><a href={% url 'About_us' %}>About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-nav animated fadeInUp">
+                    <h2>Help</h2>
+                    <div class="col-md-12">
+                        <ul class="pages">
+                            <li><a href={% url 'users-terms_and_conditions'%}>Terms &amp; Conditions</a></li>
+                            <li><a href={% url 'users-privacy_policy' %}>Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h2>Available On</h2>
+                    <button class="golden-button-card"><i class="fab fa-apple"></i> Apple Store</button>
+                    <button class="golden-button-card"><i class="fab fa-google-play"></i> Play Store</button>
+                </div>
+            </div>
+        </footer>
+        <div style="padding: 5px; background-color: #505050; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <div class="social-icons">
+                    <img src="{% static 'img/Facebook.svg' %}" alt="Facebook">
+                    <img src="{% static 'img/Instagram.svg' %}" alt="Instagram">
+                    <img src="{% static 'img/Twitter.svg' %}" alt="Twitter">
+                    <img src="{% static 'img/Youtube.svg' %}" alt="Youtube">
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; {{ year }} Priority Gold. All rights reserved.
+            </div>
+        </div>
+</body>
+
+</html>

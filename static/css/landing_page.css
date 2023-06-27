@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "myFont-Regular";
+  src: url("Demo_Fonts/Fontspring-DEMO-visbycf-regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "myFont-Bold";
+  src: url("Demo_Fonts/Fontspring-DEMO-visbycf-bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "myFont-Bold2";
+  src: url("Demo_Fonts/Fontspring-DEMO-visbycf-boldoblique.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "myFont-Thin";
+  src: url("Demo_Fonts/Fontspring-DEMO-visbycf-thin.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "myFont-Light";
+  src: url("Demo_Fonts/Fontspring-DEMO-visbycf-light.otf");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fefaea;
+}
+
+.bg-white {
+  background-color: white;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  font-family: "myFont-Regular";
+  font-size: 12px;
+}
+.bg-white p {
+  margin: 0;
+  padding: 5px 0px;
+}
+.bg-white img {
+  margin-right: 10px;
+  width: 15px;
+  height: 20px;
+}
+
+/*----------------------CSS for the Navbar------------------------------*/
+.container-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding-left: 50px; */
+  border-bottom: 1px solid #e9e1be;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: #fefaea;
+}
+
+.navbar .logo {
+  margin-left: 80px;
+}
+.navbar .logo img {
+  width: 50%;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 10px;
+  margin-right: 80px;
+}
+
+.navbar .menu a {
+  color: #272626;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 12px;
+  font-family: "myFont-Regular";
+}
+
+.navbar .menu .download-button {
+  background-color: goldenrod;
+  color: #fff;
+  border-radius: 20px;
+  height: 12px;
+  width: 90px;
+  text-align: center;
+}
+
+/*----------------------CSS for the Banner------------------------------*/
+
+.background-banner {
+  background: url(images/Mask\ Group\ 11.svg) no-repeat center center/cover;
+}
+.container-banner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  padding: 100px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.banner .content {
+  text-align: left;
+}
+
+.banner .heading {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "myFont-Bold";
+  font-size: 55px;
+  color: goldenrod;
+}
+
+.banner .sub-heading {
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: -31px;
+  font-family: "myFont-Bold";
+  color: black;
+}
+
+.banner .paragraph p {
+  color: black;
+  font-size: 16px;
+  font-family: "myFont-Regular";
+}
+
+.banner .image {
+  flex: 1;
+  text-align: right;
+}
+
+.banner .image img {
+  max-width: 100%;
+  height: auto;
+  /* width: 100%; */
+}
+.download-button2 {
+  border-radius: 20px;
+  height: 35px;
+  width: 132px;
+  color: white;
+  background-color: goldenrod;
+  border: 0;
+  font-family: "myFont-Regular";
+}
+
+/*------------------------------------------------------*/
+
+.container-cr {
+  display: flex;
+  background-color: #fefaea;
+  border-radius: 10px;
+  padding-left: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 80px;
+  /* border: 1px solid black; */
+}
+
+.left-section-cr {
+  flex: 1;
+}
+
+.right-section-cr {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-cr {
+  margin-bottom: 20px;
+}
+
+.heading-cr {
+  font-size: 55px;
+  font-family: "myFont-Bold";
+  /* font-weight: bold; */
+}
+
+.sub-heading-cr {
+  font-size: 45px;
+  /* font-weight: bold; */
+  font-family: "myFont-Bold";
+  margin-top: -40px;
+  color: black;
+}
+
+.icons-container-cr {
+  display: flex;
+}
+
+.icon-cr {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.icon-cr img {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.icon-round {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: goldenrod;
+  border-radius: 50%;
+  border: 2px solid goldenrod;
+}
+
+.icon-round::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: goldenrod;
+  border-radius: 50%;
+}
+
+.icon-line-cr {
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  top: 50%;
+  right: -45px;
+  transform: translateY(-50%);
+  justify-content: center;
+  background-color: gray;
+}
+
+.icon-description-cr {
+  font-size: 14px;
+  text-align: center;
+}
+
+.circle-container-cr {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: #f4e0b6;
+  border-radius: 50%;
+}
+
+.circle-image-cr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 60%;
+  height: auto;
+}
+.background-white {
+  background-color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.background-white2 {
+  background-color: white;
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
+}
